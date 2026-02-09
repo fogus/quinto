@@ -1,2 +1,4 @@
 ^{:css-dirs ["resources/public/css"]}
-{:main quinto.core}
+{:main quinto.core
+ :output-dir "resources/public/cljs-out"
+ :asset-path "cljs-out"}

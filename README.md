@@ -9,13 +9,21 @@ An implementation of an old abandoned board game.
 
 ## Develoipment
 
-Build and run a live-REPL:
-
-    clojure -m figwheel.main --build quinto --repl
-	
 Build:
 
     clojure -m figwheel.main --optimizations whitespace  --build-once quinto
+
+Then serve the resources/public directory:
+
+    cd resources/public
+    python3 -m http.server 8000
+
+Open http://localhost:8000/index.html in your browser.
+
+Build and run a live-REPL (not currently working):
+
+    clojure -m figwheel.main --build quinto --repl
+	
 
 [post]: http://blog.jrheard.com/quinto-resurrecting-an-abandoned-board-game
 [game]: http://blog.jrheard.com/quinto

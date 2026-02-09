@@ -21,3 +21,4 @@ out/
 node_modules/
 .rebel_readline_history
 .cpcache
+cljs-out
